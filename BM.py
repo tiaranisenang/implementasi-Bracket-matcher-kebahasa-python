@@ -1,13 +1,11 @@
 def isBalanced(s: str) -> bool:
-    """
-    Memeriksa apakah tanda kurung dalam string s seimbang.
+    """Memeriksa apakah tanda kurung dalam string s seimbang.
 
     Args:
         s: String yang akan diperiksa.
 
     Returns:
-        True jika tanda kurung seimbang, False jika tidak.
-    """
+        True jika tanda kurung seimbang, False jika tidak."""
     stack = []
     mapping = {")": "(", "}": "{", "]": "["}
     for char in s:
